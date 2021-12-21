@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	  <Nullable>enable</Nullable>
+	  <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MessagePack" Version="2.3.85" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+  </ItemGroup>
+	<ItemGroup>
+		<Using Include="Microsoft.EntityFrameworkCore" />
+		<Using Include="System.ComponentModel.DataAnnotations" />
+		<Using Include="System.ComponentModel.DataAnnotations.Schema" />
+		<Using Include="System.Text.Json.Serialization" />
+		<Using Include="DataAccess.Data"/>
+		<Using Include="DataAccess.DbAccess"/>
+		<Using Include="DataAccess.Models"/>
+		<Using Include="ApiFinalmente"/>
+		<Using Include="System.Text.RegularExpressions"/>
+		<Using Include="DataAccess.Validate;"/>
+	</ItemGroup>
+</Project>
